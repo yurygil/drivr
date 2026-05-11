@@ -23,23 +23,23 @@ const stagger = {
 const roadmap = [
   {
     phase: "FASE 1",
-    title: "Branding & Comunidade",
-    text: "Construção da identidade pública, narrativa urbana, presença social e base inicial da comunidade DRIVR.",
+    title: "Comunidade & Identidade",
+    text: "Construção da base da DRIVR, fortalecimento da narrativa urbana e crescimento da comunidade inicial.",
   },
   {
     phase: "FASE 2",
-    title: "Infraestrutura Web3",
-    text: "Preparação técnica do ecossistema, arquitetura do token, contratos, documentação e canais oficiais.",
+    title: "Infraestrutura Digital",
+    text: "Desenvolvimento da estrutura blockchain, arquitetura do ecossistema e documentação oficial do projeto.",
   },
   {
     phase: "FASE 3",
-    title: "Expansão",
-    text: "Crescimento da comunidade, parcerias estratégicas, ativações digitais e fortalecimento do treasury.",
+    title: "Participação & Benefícios",
+    text: "Exploração de futuras possibilidades de integração, reconhecimento digital e benefícios voltados para trabalhadores urbanos.",
   },
   {
     phase: "FASE 4",
-    title: "Escala",
-    text: "Evolução da governança, utilidades digitais e expansão do ecossistema para novos mercados urbanos.",
+    title: "Expansão do Ecossistema",
+    text: "Crescimento da DRIVR para novas comunidades, parceiros e possibilidades dentro da economia urbana digital.",
   },
 ];
 
@@ -47,22 +47,22 @@ const buildItems = [
   {
     icon: Coins,
     title: "Token $DRIVR",
-    text: "Um ativo digital planejado para sustentar o ecossistema DRIVR, ainda em fase de desenvolvimento.",
+    text: "Uma moeda digital pensada para conectar trabalhadores urbanos ao ecossistema DRIVR de forma transparente e progressiva.",
   },
   {
     icon: Users,
-    title: "Comunidade Urbana",
-    text: "Uma comunidade para motoristas, builders, apoiadores e pessoas conectadas à economia da mobilidade.",
+    title: "Comunidade das Ruas",
+    text: "Motoristas, entregadores, motoboys, ciclistas e pessoas que vivem a rotina urbana todos os dias.",
   },
   {
     icon: Shield,
-    title: "Treasury",
-    text: "Estrutura futura para apoiar desenvolvimento, operações, comunidade e expansão estratégica.",
+    title: "Participação Digital",
+    text: "Um caminho para criar novas formas de reconhecimento, benefícios e pertencimento dentro da economia urbana digital.",
   },
   {
     icon: RadioTower,
-    title: "Governança Futura",
-    text: "Caminho planejado para participação progressiva da comunidade nas decisões do ecossistema.",
+    title: "Futuro Aberto",
+    text: "A DRIVR está sendo construída em público, evoluindo junto com sua comunidade desde os primeiros passos.",
   },
 ];
 
@@ -94,7 +94,9 @@ const [status, setStatus] = useState("");
           </div>
           <div>
             <div className="text-lg font-black tracking-[0.24em] text-[#f5d56a]">DRIVR</div>
-            <div className="text-[10px] uppercase tracking-[0.28em] text-white/40">Web3 Mobility</div>
+            <div className="text-[10px] uppercase tracking-[0.28em] text-white/40">
+  Economia Urbana Digital
+</div>
           </div>
         </a>
 
@@ -123,7 +125,7 @@ const [status, setStatus] = useState("");
           className="max-w-4xl"
         >
           <motion.div variants={fadeUp} className="mb-6 inline-flex rounded-full border border-[#d4af37]/30 bg-[#d4af37]/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.28em] text-[#f5d56a]">
-            Building the urban Web3 layer
+            Construindo a economia digital das ruas
           </motion.div>
 
           <motion.h1 variants={fadeUp} className="max-w-5xl text-6xl font-black uppercase leading-[0.9] tracking-[-0.06em] text-white md:text-8xl lg:text-9xl">
@@ -131,7 +133,9 @@ const [status, setStatus] = useState("");
           </motion.h1>
 
           <motion.p variants={fadeUp} className="mt-8 max-w-2xl text-lg leading-8 text-white/64 md:text-xl">
-            Infraestrutura Web3 para mobilidade urbana e comunidade digital. DRIVR nasce para construir uma camada premium, pública e de longo prazo para a economia das ruas.
+            A DRIVR é um projeto brasileiro criado para conectar motoristas, entregadores e trabalhadores urbanos à nova economia digital através da tecnologia blockchain.
+
+Quem move as cidades também merece participar do futuro que ajuda a construir.
           </motion.p>
 
           <motion.div
@@ -140,15 +144,15 @@ const [status, setStatus] = useState("");
 >
   <div className="mb-6">
     <div className="text-sm font-black uppercase tracking-[0.24em] text-[#f5d56a]">
-      Early Access
+      Comunidade Inicial
     </div>
 
     <h3 className="mt-3 text-2xl font-black uppercase">
-      Join the Movement
+      Entre para a DRIVR
     </h3>
 
     <p className="mt-3 text-white/56">
-      Entre na comunidade inicial da DRIVR e acompanhe a construção do ecossistema.
+      Participe do início da DRIVR e acompanhe a construção de uma nova economia digital voltada para quem move as cidades todos os dias.
     </p>
   </div>
 
@@ -209,7 +213,7 @@ const [status, setStatus] = useState("");
       type="submit"
       className="w-full rounded-xl bg-gradient-to-r from-[#b58a1e] via-[#f5d56a] to-[#fff1a8] px-6 py-4 text-sm font-black uppercase tracking-[0.18em] text-black transition hover:scale-[1.01]"
     >
-      Join the Movement
+      Entre para a DRIVR
     </button>
     {status && (
   <p className="text-sm font-semibold text-[#f5d56a]">
@@ -256,12 +260,16 @@ const [status, setStatus] = useState("");
         <div className="grid gap-10 lg:grid-cols-[.85fr_1.15fr]">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-120px" }} variants={fadeUp}>
             <p className="text-sm font-black uppercase tracking-[0.3em] text-[#f5d56a]">Sobre o DRIVR</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-[-0.04em] md:text-6xl">Uma marca Web3 para a economia urbana.</h2>
+            <h2 className="mt-4 text-4xl font-black uppercase tracking-[-0.04em] md:text-6xl">Uma nova economia digital para quem move as ruas.</h2>
           </motion.div>
 
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-120px" }} variants={fadeUp} className="rounded-[2rem] border border-white/10 bg-white/[0.035] p-8 text-lg leading-8 text-white/64 backdrop-blur-xl md:p-10">
             <p>
-              DRIVR é um projeto em construção pública, criado para unir comunidade urbana, mobilidade e infraestrutura Web3 em uma narrativa de longo prazo. Antes de qualquer lançamento, o foco é construir legitimidade: identidade forte, canais oficiais, visão clara e uma comunidade que entende o valor de um ecossistema bem estruturado.
+              A DRIVR nasce com a visão de criar uma economia digital conectada aos trabalhadores que movimentam as cidades todos os dias.
+
+Motoristas de aplicativo, motoboys, entregadores e ciclistas urbanos fazem parte da infraestrutura real das ruas, mas quase nunca participam da construção digital desse futuro.
+
+Nosso objetivo é construir uma comunidade forte, transparente e de longo prazo utilizando tecnologia blockchain como base.
             </p>
           </motion.div>
         </div>
@@ -272,14 +280,15 @@ const [status, setStatus] = useState("");
           <div className="grid gap-10 lg:grid-cols-2">
             <div>
               <p className="text-sm font-black uppercase tracking-[0.3em] text-[#f5d56a]">O problema</p>
-              <h2 className="mt-4 text-4xl font-black uppercase tracking-[-0.04em] md:text-6xl">A mobilidade move cidades, mas ainda não tem uma camada digital própria.</h2>
+              <h2 className="mt-4 text-4xl font-black uppercase tracking-[-0.04em] md:text-6xl">As cidades nunca param. Mas quem move elas quase nunca é reconhecido.</h2>
             </div>
             <div className="space-y-6 text-lg leading-8 text-white/64">
               <p>
-                A economia da mobilidade urbana ainda é marcada por centralização, taxas elevadas, dependência de plataformas fechadas e pouca participação das comunidades que realmente movimentam as ruas.
+                Milhões de trabalhadores passam horas nas ruas mantendo aplicativos, entregas e deslocamentos funcionando todos os dias.
+                Mesmo sustentando parte da economia urbana, continuam fora da construção digital desse futuro.
               </p>
               <p>
-                DRIVR nasce para explorar uma alternativa: uma infraestrutura digital onde marca, comunidade, tokenização e governança futura possam operar de forma integrada, transparente e progressiva.
+                A DRIVR nasce para construir uma infraestrutura digital onde comunidade, reconhecimento e participação possam crescer juntos através da tecnologia blockchain.
               </p>
             </div>
           </div>
@@ -288,8 +297,12 @@ const [status, setStatus] = useState("");
 
       <section id="building" className="relative z-10 mx-auto max-w-7xl px-6 py-24 lg:px-8">
         <div className="mb-14 max-w-3xl">
-          <p className="text-sm font-black uppercase tracking-[0.3em] text-[#f5d56a]">O que estamos construindo</p>
-          <h2 className="mt-4 text-4xl font-black uppercase tracking-[-0.04em] md:text-6xl">Um ecossistema, não uma aposta.</h2>
+          <p className="text-sm font-black uppercase tracking-[0.3em] text-[#f5d56a]">
+  O que estamos construindo
+</p>
+<h2 className="mt-4 text-4xl font-black uppercase tracking-[-0.04em] md:text-6xl">
+  Uma economia digital para quem move as cidades.
+</h2>
         </div>
 
         <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
@@ -309,19 +322,46 @@ const [status, setStatus] = useState("");
           ))}
         </div>
       </section>
+      <section className="relative z-10 mx-auto max-w-7xl px-6 py-24 lg:px-8">
+  <div className="rounded-[2.75rem] border border-[#d4af37]/25 bg-gradient-to-br from-[#d4af37]/10 via-white/[0.03] to-black p-8 shadow-[0_0_90px_rgba(212,175,55,0.08)] md:p-14">
+    <p className="text-sm font-black uppercase tracking-[0.3em] text-[#f5d56a]">
+      Manifesto
+    </p>
+
+    <h2 className="mt-6 max-w-5xl text-4xl font-black uppercase tracking-[-0.05em] md:text-7xl">
+      Quem move as cidades nunca deveria ficar de fora do futuro delas.
+    </h2>
+
+    <div className="mt-8 grid gap-8 text-lg leading-8 text-white/62 lg:grid-cols-3">
+      <p>
+        Todos os dias, milhões de trabalhadores passam horas nas ruas mantendo aplicativos,
+        entregas e deslocamentos funcionando.
+      </p>
+
+      <p>
+        Mesmo movimentando parte da economia urbana, quase nunca participam da construção
+        digital desse futuro.
+      </p>
+
+      <p>
+        A DRIVR nasce para reconhecer, conectar e fortalecer quem realmente mantém as cidades em movimento.
+      </p>
+    </div>
+  </div>
+</section>
 
       <section id="roadmap" className="relative z-10 mx-auto max-w-7xl px-6 py-24 lg:px-8">
         <div className="mb-14 flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.3em] text-[#f5d56a]">Roadmap</p>
-            <h2 className="mt-4 text-4xl font-black uppercase tracking-[-0.04em] md:text-6xl">Construção por fases.</h2>
+            <h2 className="mt-4 text-4xl font-black uppercase tracking-[-0.04em] md:text-6xl">Construindo a DRIVR passo a passo.</h2>
           </div>
           <p className="max-w-xl text-lg leading-8 text-white/56">
-            O roadmap da DRIVR prioriza base, infraestrutura, comunidade e escala antes de qualquer narrativa especulativa.
+            A DRIVR está sendo construída com foco em comunidade, infraestrutura digital e crescimento sustentável antes de qualquer narrativa especulativa.
           </p>
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {roadmap.map((item, index) => (
             <motion.div
               key={item.phase}
@@ -343,21 +383,22 @@ const [status, setStatus] = useState("");
       <section id="token" className="relative z-10 mx-auto max-w-7xl px-6 py-24 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[1fr_.9fr]">
           <div className="rounded-[2.5rem] border border-[#d4af37]/25 bg-gradient-to-br from-[#d4af37]/12 via-white/[0.035] to-black p-8 md:p-12">
-            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#f5d56a]">Token Info</p>
+            <p className="text-sm font-black uppercase tracking-[0.3em] text-[#f5d56a]">Token DRIVR</p>
             <h2 className="mt-4 text-5xl font-black uppercase tracking-[-0.06em] md:text-7xl">$DRIVR</h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/60">
-              Informações iniciais do token planejado. A DRIVR ainda está em desenvolvimento e não possui lançamento ativo.
+              O $DRIVR será a moeda digital do ecossistema DRIVR, criada para conectar comunidade, participação e futuras possibilidades dentro da economia urbana digital.
+              O projeto ainda está em desenvolvimento e não possui lançamento ativo no momento.
             </p>
           </div>
 
           <div className="rounded-[2.5rem] border border-white/10 bg-white/[0.035] p-8 backdrop-blur-xl md:p-10">
             <div className="space-y-5">
               {[
-                ["Nome", "DRIVR"],
-                ["Símbolo", "$DRIVR"],
-                ["Rede planejada", "Polygon"],
-                ["Status", "Em desenvolvimento"],
-              ].map(([label, value]) => (
+  ["Nome", "DRIVR"],
+  ["Símbolo", "$DRIVR"],
+  ["Blockchain", "Polygon"],
+  ["Status", "Construção inicial"],
+].map(([label, value]) => (
                 <div key={label} className="flex items-center justify-between gap-6 border-b border-white/10 pb-5 last:border-b-0 last:pb-0">
                   <span className="text-sm uppercase tracking-[0.22em] text-white/40">{label}</span>
                   <span className="text-right text-lg font-black text-white">{value}</span>
@@ -372,10 +413,10 @@ const [status, setStatus] = useState("");
         <div className="overflow-hidden rounded-[2.75rem] border border-[#d4af37]/25 bg-[#070707] p-8 text-center shadow-[0_0_90px_rgba(212,175,55,0.10)] md:p-14">
           <Building2 className="mx-auto h-10 w-10 text-[#f5d56a]" />
           <h2 className="mx-auto mt-8 max-w-4xl text-4xl font-black uppercase tracking-[-0.05em] md:text-7xl">
-            A estrada está sendo construída em público.
+            O futuro das ruas também pertence a quem trabalha nelas.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/58">
-            Acompanhe os próximos marcos, atualizações de branding, canais oficiais e evolução do ecossistema DRIVR.
+            A DRIVR está sendo construída em público ao lado de motoristas, entregadores e trabalhadores urbanos que movimentam as cidades todos os dias.
           </p>
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <a
@@ -384,10 +425,10 @@ const [status, setStatus] = useState("");
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-black uppercase tracking-[0.18em] text-black transition hover:bg-[#f5d56a]"
             >
-              X / Twitter
+              Acompanhar projeto
             </a>
             <button className="cursor-not-allowed rounded-full border border-white/12 px-7 py-4 text-sm font-black uppercase tracking-[0.18em] text-white/38">
-              Telegram — Coming Soon
+              Comunidade — Em breve
             </button>
           </div>
         </div>
@@ -403,13 +444,12 @@ const [status, setStatus] = useState("");
       
       <div>
         <h2 className="text-4xl font-black uppercase tracking-[-0.05em] md:text-6xl">
-          Building DRIVR in public.
+          Construindo a DRIVR ao lado de quem move as cidades.
         </h2>
 
         <p className="mt-6 max-w-2xl text-lg leading-8 text-white/60">
-          DRIVR está sendo construído publicamente por Yury Gil,
-          com foco em infraestrutura Web3, mobilidade urbana
-          e ecossistemas digitais de longo prazo.
+          A DRIVR está sendo construída publicamente por Yury Gil com a visão de criar uma economia digital mais conectada aos trabalhadores urbanos.
+          Motoristas, entregadores e profissionais das ruas fazem parte da infraestrutura real das cidades — e merecem participar do futuro digital delas.
         </p>
       </div>
 
@@ -419,7 +459,7 @@ const [status, setStatus] = useState("");
         </div>
 
         <div className="mt-2 text-sm uppercase tracking-[0.2em] text-[#f5d56a]">
-          Blockchain & Full Stack Developer
+          Founder • Blockchain & Full Stack Developer
         </div>
 
         <div className="mt-8 flex flex-wrap gap-4">
@@ -447,7 +487,7 @@ const [status, setStatus] = useState("");
 </section>
       <footer className="relative z-10 border-t border-white/10 px-6 py-10 lg:px-8">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 text-sm text-white/38 md:flex-row md:items-center">
-          <div className="font-bold uppercase tracking-[0.22em]">© 2026 DRIVR. Building in public.</div>
+          <div className="font-bold uppercase tracking-[0.22em]">© 2026 DRIVR. Construído em público.</div>
           <div className="max-w-2xl text-right leading-6">
             DRIVR está em desenvolvimento. Nenhuma informação nesta página constitui recomendação financeira, oferta de investimento ou promessa de retorno.
           </div>
